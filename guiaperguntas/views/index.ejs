@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs')%>
+
+
+<div class="container">
+    <!-- mudar para uma variavel que venha da rota e jogar na navbar -->
+    <h2>Perguntas do site</h2>
+    <br>
+    <hr>
+    <div class="row">
+        <h3>Realizar uma nova pergunta: </h3><a href="/perguntar" class="btn btn-primary"> Sim</a>
+    </div>
+    <% perguntas.forEach(pergunta => { %>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <h3><%= pergunta.titulo %></h3>
+            <p>Data da postagem: <%= pergunta.createdAt%></p>
+        </div>
+        <div class="card-footer">
+            <a href="/pergunta/<%= pergunta.id %>"><button class="btn btn-primary">Responder</button></a>
+        </div>
+    </div>
+    <% }) %>
+
+
+
+
+
+</div>
+
+
+<%- include('partials/footer.ejs')%>

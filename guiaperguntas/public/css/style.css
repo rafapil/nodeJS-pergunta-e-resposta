@@ -1,0 +1,16 @@
+body {
+    /* background-image: url("/img/gata.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    background-color: rgba(58, 54, 54, 0.705);
+
+}
+
+#img-logo {
+    height: 3vh;
+}
+
+#formulario-pergunta {
+    margin-top: 5vh;
+}
